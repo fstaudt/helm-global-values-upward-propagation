@@ -1,0 +1,5 @@
+name: template
+global:
+  data: {}
+  configMap:
+    data: {}

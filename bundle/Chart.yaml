@@ -1,0 +1,10 @@
+apiVersion: v2
+name: bundle
+version: 0.0.0
+dependencies:
+  - name: subchart-1
+    version: 0.0.0
+    repository: "file://../subchart-1"
+  - name: subchart-2
+    version: 0.0.0
+    repository: "file://../subchart-2"

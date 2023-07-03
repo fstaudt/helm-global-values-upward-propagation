@@ -1,0 +1,8 @@
+template:
+  name: subchart-1
+global:
+  data:
+    global.data.subchart-1: test
+  configMap:
+    data:
+      global.configMap.data.subchart-1: test

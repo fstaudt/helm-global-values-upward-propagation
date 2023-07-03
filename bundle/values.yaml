@@ -1,0 +1,7 @@
+global:
+  data:
+    global.data.bundle: test
+  configMap:
+    data:
+      global.configMap.data.bundle: test
+

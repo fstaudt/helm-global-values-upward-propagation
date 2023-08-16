@@ -21,7 +21,14 @@ It also defines one key in each collection in its `values.yaml`:
 - `global.configMap.data.bundle`
 
 Following [rules of propagation for global values](https://helm.sh/docs/topics/charts/#global-values), 
-the following data are expected in generated resources for bundle chart:
+the following data are expected in generated resources for bundle chart with following commands:
+```bash
+helm dependency update subchart-1 > /dev/null
+helm dependency update subchart-2 > /dev/null
+helm dependency update bundle > /dev/null
+helm template bundle
+```
+
 ```yaml
 ---
 # Source: bundle/charts/subchart-1/charts/template/templates/configMap.yaml
